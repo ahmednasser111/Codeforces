@@ -3,14 +3,12 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    int n, w, k;
+    int k, n, w;
 
     cin >> k >> n >> w;
 
-    int price = 0;
-
-    for (int i = 1; i <= w; i++)
-        price += k * i;
+    // The sum from 1 to (w) times (k).
+    int price = (w + 1) * w * k / 2;
 
     if (price > n)
         cout << price - n;
