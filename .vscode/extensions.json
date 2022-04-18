@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "github.copilot",
+    "jeff-hykin.better-cpp-syntax",
+    "aaron-bond.better-comments",
+    "ms-vscode.cpptools"
+  ]
+}
