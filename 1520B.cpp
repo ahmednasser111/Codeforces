@@ -1,21 +1,34 @@
-#include <bits/stdc++.h>
+// FALSE
+#include <iostream>
 using namespace std;
-
-int main()
+int ordinary(int number)
 {
-    int t;
-    cin >> t;
-    int n;
-    while (t--)
+    if (number < 10)
     {
-        cin >> n;
-        int r = log10(n);
-        int tmp = 0;
-        for (int i = 0; i < r + 1; i++)
-        {
-            tmp = tmp * 10 + 1;
-        }
-        cout << (r * 9 + n / tmp) << "\n";
+        return number;
     }
+    int count = 0;
+    for (int i = 0; i <= number; i = i * 10 + 1)
+    {
+        count++;
+    }
+
+    return count;
+}
+int main(int argc, char const *argv[])
+{
+    int t, number;
+    cin >> t;
+    int ans[t];
+    for (int i = 0; i < t; i++)
+    {
+        cin >> number;
+        ans[i] = ordinary(number);
+    }
+    for (int i = 0; i < t; i++)
+    {
+        cout << ans[i] << "\n";
+    }
+
     return 0;
 }
