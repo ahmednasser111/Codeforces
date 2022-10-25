@@ -1,0 +1,15 @@
+// Squares and Cubes
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  int t;
+  scanf("%d", &t);
+  while (t--)
+  {
+    int n;
+    scanf("%d", &n);
+    cout << (int)sqrt(n) + (int)cbrt(n) - (int)sqrt(cbrt(n)) << '\n';
+  }
+}
