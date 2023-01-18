@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
   scanf("%d", &t);
   while (t--)
   {
-    int a, b, c = 0;
+    int a, b;
     scanf("%d%d", &a, &b);
     cout << min(min(a, b), (a + b) / 4) << endl;
   }
